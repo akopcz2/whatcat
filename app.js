@@ -6,7 +6,7 @@ var express = require('express');
 var app = module.exports.app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 var oxford = require('project-oxford');
 var client = new oxford.Client(process.env.OXFORD);
 var angerList = require('./anger.js');
